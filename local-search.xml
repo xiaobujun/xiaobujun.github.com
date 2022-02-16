@@ -4,13 +4,27 @@
   
   
   <entry>
-    <title>Hello World</title>
-    <link href="/2022/02/15/hello-world/"/>
-    <url>/2022/02/15/hello-world/</url>
+    <title>个人博客搭建记录</title>
+    <link href="/2022/02/16/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/"/>
+    <url>/2022/02/16/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>随着自媒体的兴起，人人都能在互联网的浪潮中激起朵朵浪花。我们能通过各种各样方式比如微博、朋友圈等社交软件；抖音、B站等短视屏平台来展现自己。那么我们能不能制作一个属于自己的独一无二的东西？我觉得拥有一个个人博客，就是一件非常酷的事情。</p><p>搭建一个个人博客？听起来像是一件很麻烦的事情。确实，如果你是通过常规的HTML+CSS+Javascript来创建一个博客，那就需要提前储备一定的知识。好消息是，现如今随着博客框架技术的发展，你可以在短短的15分钟内搭建好一个属于自己的个人博客。</p><p>那么接下来，我将一步一步手把手的教大家如何利用Hexo框架去搭建一个属于自己的个人博客。 </p><h2 id="前置环境配置"><a href="#前置环境配置" class="headerlink" title="前置环境配置"></a>前置环境配置</h2><ul><li><p>Git(我们的网站将托管在Github上面，域名来自Github托管页面的镜像)</p></li><li><p>Node.js(附带npm，用来安装Hexo本地环境)</p><h3 id="一、配置Git和创建Github账号"><a href="#一、配置Git和创建Github账号" class="headerlink" title="一、配置Git和创建Github账号"></a>一、配置Git和创建Github账号</h3><p>Git下载地址：<a href="https://git-scm.com/download/win">Git - Downloading Package (git-scm.com)</a></p><ol><li>选择红框内的进行下载<img src="C:\Users\小布菌\AppData\Roaming\Typora\typora-user-images\image-20220215164733336.png" alt="image-20220215164733336"></li><li>解压安装检测配置是否安装成功(详细见视频)</li></ol><p>Github官网：<a href="https://github.com/">GitHub: Where the world builds software · GitHub</a></p><h3 id="二、Node-js安装与配置"><a href="#二、Node-js安装与配置" class="headerlink" title="二、Node.js安装与配置"></a>二、Node.js安装与配置</h3><p>Node.js下载地址：<a href="http://nodejs.cn/download/">下载 | Node.js 中文网 (nodejs.cn)</a></p></li></ul><h2 id="Hexo配置"><a href="#Hexo配置" class="headerlink" title="Hexo配置"></a>Hexo配置</h2><ol><li><p>在命令行中通过npm命令安装Hexo</p><figure class="highlight avrasm"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs avrasm">npm install -g hexo-<span class="hljs-keyword">cli</span><br></code></pre></td></tr></table></figure></li><li><p>创建一个文件文件夹用来存放Hexo博客的相关文件</p></li><li><p>进入到该目录下，在地址栏输入cmd，然后在命令行里输入npm指令初始化Hexo</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">hexo <span class="hljs-built_in">int</span><br></code></pre></td></tr></table></figure></li><li><p>此时的博客文件夹下有以下文件</p></li><li><p>输入<code>hexo g</code>和<code>hexo s</code>进行本地部署</p></li><li><p>部署到Github，首先需要安装部署插件</p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">npm install <span class="hljs-comment">--save hexo-deployer-git</span><br></code></pre></td></tr></table></figure></li></ol><hr><h2 id="Hexo美化"><a href="#Hexo美化" class="headerlink" title="Hexo美化"></a>Hexo美化</h2><p>你可能意识到Hexo的默认主题landscape有些简陋，万幸的是我们能在<a href="https://hexo.io/themes/">Hexo主题官网</a>找到很多风格迥异且漂亮的主题，下面我将向大家介绍如何使用一个新的主题。</p><ol><li>进入Hexo主题官网挑选一个漂亮的主题，通常作者会把该主题的源码放到Github上托管</li><li>使用git指令将整个主题克隆到博客的themes目录中</li><li>在<code>_config.yml</code>配置文件中修改主题参数</li><li>输入Hexo指令重新部署上传到Github中</li></ol><h1 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h1><p>我们可以修改一个主题如导航栏、文章页的几乎所有东西，使它被你看起来更加美观、个性化，下面我们将以Fluid主题为例向大家介绍如何修改</p><p><a href="https://hexo.fluid-dev.com/docs/">Hexo Fluid 用户手册 (fluid-dev.com)</a></p><ol><li>几乎每个主题都会有一个文档来讲解该主题的配置和使用，我们的配置必须参考该文档进行</li></ol><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p><a href="https://hexo.io/zh-cn/docs/">Hexo官方文档</a></p>]]></content>
     
     
+    <categories>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>个人博客</tag>
+      
+      <tag>前端</tag>
+      
+    </tags>
     
   </entry>
   
