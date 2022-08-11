@@ -17,19 +17,6 @@
   
   
   <entry>
-    <title></title>
-    <link href="/2022/08/11/1.%E4%BB%80%E4%B9%88%E6%98%AFJavaScript/"/>
-    <url>/2022/08/11/1.%E4%BB%80%E4%B9%88%E6%98%AFJavaScript/</url>
-    
-    <content type="html"><![CDATA[<h1 id="一、什么是JavaScript"><a href="#一、什么是JavaScript" class="headerlink" title="一、什么是JavaScript"></a>一、什么是JavaScript</h1><h2 id="1-1-简单的历史回顾"><a href="#1-1-简单的历史回顾" class="headerlink" title="1.1 简单的历史回顾"></a>1.1 简单的历史回顾</h2><p>​        随着Web浪潮的兴起，网页变得越来越大、越来越复杂，验证一份表单与服务器进行往返通信的时间也越来越久，导致人们对客户端脚本的语言需求越来越强烈。</p><p>​        1995年，网景公司的Brendan Eich工程师开发了一个叫Mocha（后来改名为LiveScript）的脚本语言。后来为蹭Java的热度，又把名字改成了Javascript。</p><p>​        1997年，欧洲计算机制造商协会（Ecma）的第39技术委员会（TC39)制定了JavaScript 1.1的标准。这个标准即为ECMA-262，也就是ECMAScript。</p><p>​        1998年，国际标准化组织（ISO）和国际电工委员会（IEC）也将ECAMScript采纳为标准（IEC-16262）。此后，各家浏览器均以ECMAScript作为自己JavaScript实现的依据，仅仅是具体实现不尽相同。</p><h2 id="1-2-Javascript实现"><a href="#1-2-Javascript实现" class="headerlink" title="1.2 Javascript实现"></a>1.2 Javascript实现</h2><p>​        JavaScript和ECMAScript基本相同，但是Javascript不限于ECMA-262所定义的。它包含以下几个部分。</p><ul><li>核心（ECMAScript）</li><li>文档对象模型（DOM）</li><li>浏览器对象模型（BOM）</li></ul><p><img src="C:\Users\小布菌\AppData\Roaming\Typora\typora-user-images\image-20220328195206783.png" alt="image-20220328195206783"></p><h3 id="1-2-1-ECAMScript"><a href="#1-2-1-ECAMScript" class="headerlink" title="1.2.1 ECAMScript"></a>1.2.1 ECAMScript</h3><p>​        ECAMScript,即ECMA-262定义的语言，并不局限于Web浏览器。Web浏览器只是ECAMScript实现可能存在的一种宿主环境（host environment)。</p><ol><li><p>ECMAScript版本<br><img src="C:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231748831.png" alt="image-20220328231748831"></p><p><img src="C:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231802057.png" alt="image-20220328231802057"></p></li><li><p>ECMAScript符合性</p></li><li><p>浏览器对ECMAScript的支持<img src="C:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231923402.png" alt="image-20220328231923402"></p></li></ol><h3 id="1-2-2-DOM"><a href="#1-2-2-DOM" class="headerlink" title="1.2.2 DOM"></a>1.2.2 DOM</h3><p>​        文档对象模型（DOM，Document Object Model）是一个应用编程接口（API），用于在HTML中使用拓展的XML。DOM将整个页面抽象为一组分层节点。HTML或XML页面的每个组成部分都是一种结点，包含不同的数据。</p><figure class="highlight html"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></div></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Sample Page<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><br>            Hello World!<br>        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure><p>以上代码，通过DOM可以表示一组分层结点。</p><p><img src="C:\Users\小布菌\AppData\Roaming\Typora\typora-user-images\image-20220328200757919.png" alt="image-20220328200757919"></p><ol><li>为什么DOM是必需的</li><li>DOM的级别<br>1998年10月，DOM Level 1 成为W3C的推荐标准。这个规范由两个模块组成：DOM Core 和 DOM HTML 。</li><li>其他 DOM</li><li>Web浏览器对 DOM 的支持情况</li></ol><h3 id="1-2-3-BOM"><a href="#1-2-3-BOM" class="headerlink" title="1.2.3 BOM"></a>1.2.3 BOM</h3><p>浏览器对象模型（BOM），用于支持访问和操作浏览器的窗口</p><h2 id="1-3-Javascript-版本"><a href="#1-3-Javascript-版本" class="headerlink" title="1.3 Javascript 版本"></a>1.3 Javascript 版本</h2><p><img src="C:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231320698.png" alt="image-20220328231320698"></p><p>注：多数浏览器对Javascript的支持，指的是实现ECMAScript和DOM的程度。</p><h2 id="1-4-小结"><a href="#1-4-小结" class="headerlink" title="1.4 小结"></a>1.4 小结</h2><p>​        JavaScript 是一门用来与网页交互的脚本语言，包含以下三个组成部分。</p><ul><li>ECAMScript：由ECAM-262定义并提供核心功能。</li><li>文档对象模型（DOM）：提供与网页内容交互的方法和接口</li><li>浏览器对象模型（BOM）：提供与浏览器交互的方法和接口。</li></ul><p>​        JavaScript的这三个部分得到了五大Web浏览器（IE、Firefox、Chrome、Safari和Opera）不同程度的支持。所有浏览器基本上对ES5（ECMAScript 5）提供了完善的支持，对ES6和ES7的支持也不断提升。</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>计算机语言</title>
     <link href="/2022/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/"/>
     <url>/2022/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/</url>
@@ -40,6 +27,37 @@
     <categories>
       
       <category>科普</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>计算机语言</tag>
+      
+      <tag>后端</tag>
+      
+      <tag>Java</tag>
+      
+      <tag>C语言</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>什么是JavaScript</title>
+    <link href="/2022/03/19/1.%E4%BB%80%E4%B9%88%E6%98%AFJavaScript/"/>
+    <url>/2022/03/19/1.%E4%BB%80%E4%B9%88%E6%98%AFJavaScript/</url>
+    
+    <content type="html"><![CDATA[<h1 id="一、什么是JavaScript"><a href="#一、什么是JavaScript" class="headerlink" title="一、什么是JavaScript"></a>一、什么是JavaScript</h1><h2 id="1-1-简单的历史回顾"><a href="#1-1-简单的历史回顾" class="headerlink" title="1.1 简单的历史回顾"></a>1.1 简单的历史回顾</h2><p>​        随着Web浪潮的兴起，网页变得越来越大、越来越复杂，验证一份表单与服务器进行往返通信的时间也越来越久，导致人们对客户端脚本的语言需求越来越强烈。</p><p>​        1995年，网景公司的Brendan Eich工程师开发了一个叫Mocha（后来改名为LiveScript）的脚本语言。后来为蹭Java的热度，又把名字改成了Javascript。</p><p>​        1997年，欧洲计算机制造商协会（Ecma）的第39技术委员会（TC39)制定了JavaScript 1.1的标准。这个标准即为ECMA-262，也就是ECMAScript。</p><p>​        1998年，国际标准化组织（ISO）和国际电工委员会（IEC）也将ECAMScript采纳为标准（IEC-16262）。此后，各家浏览器均以ECMAScript作为自己JavaScript实现的依据，仅仅是具体实现不尽相同。</p><h2 id="1-2-Javascript实现"><a href="#1-2-Javascript实现" class="headerlink" title="1.2 Javascript实现"></a>1.2 Javascript实现</h2><p>​        JavaScript和ECMAScript基本相同，但是Javascript不限于ECMA-262所定义的。它包含以下几个部分。</p><ul><li>核心（ECMAScript）</li><li>文档对象模型（DOM）</li><li>浏览器对象模型（BOM）</li></ul><p><img src="C:\Users\小布菌\AppData\Roaming\Typora\typora-user-images\image-20220328195206783.png" alt="image-20220328195206783"></p><h3 id="1-2-1-ECAMScript"><a href="#1-2-1-ECAMScript" class="headerlink" title="1.2.1 ECAMScript"></a>1.2.1 ECAMScript</h3><p>​        ECAMScript,即ECMA-262定义的语言，并不局限于Web浏览器。Web浏览器只是ECAMScript实现可能存在的一种宿主环境（host environment)。</p><ol><li><p>ECMAScript版本<br><img src="C:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231748831.png" alt="image-20220328231748831"></p><p><img src="C:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231802057.png" alt="image-20220328231802057"></p></li><li><p>ECMAScript符合性</p></li><li><p>浏览器对ECMAScript的支持<img src="C:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231923402.png" alt="image-20220328231923402"></p></li></ol><h3 id="1-2-2-DOM"><a href="#1-2-2-DOM" class="headerlink" title="1.2.2 DOM"></a>1.2.2 DOM</h3><p>​        文档对象模型（DOM，Document Object Model）是一个应用编程接口（API），用于在HTML中使用拓展的XML。DOM将整个页面抽象为一组分层节点。HTML或XML页面的每个组成部分都是一种结点，包含不同的数据。</p><figure class="highlight html"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></div></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Sample Page<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><br>            Hello World!<br>        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure><p>以上代码，通过DOM可以表示一组分层结点。</p><p><img src="C:\Users\小布菌\AppData\Roaming\Typora\typora-user-images\image-20220328200757919.png" alt="image-20220328200757919"></p><ol><li>为什么DOM是必需的</li><li>DOM的级别<br>1998年10月，DOM Level 1 成为W3C的推荐标准。这个规范由两个模块组成：DOM Core 和 DOM HTML 。</li><li>其他 DOM</li><li>Web浏览器对 DOM 的支持情况</li></ol><h3 id="1-2-3-BOM"><a href="#1-2-3-BOM" class="headerlink" title="1.2.3 BOM"></a>1.2.3 BOM</h3><p>浏览器对象模型（BOM），用于支持访问和操作浏览器的窗口</p><h2 id="1-3-Javascript-版本"><a href="#1-3-Javascript-版本" class="headerlink" title="1.3 Javascript 版本"></a>1.3 Javascript 版本</h2><p><img src="C:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231320698.png" alt="image-20220328231320698"></p><p>注：多数浏览器对Javascript的支持，指的是实现ECMAScript和DOM的程度。</p><h2 id="1-4-小结"><a href="#1-4-小结" class="headerlink" title="1.4 小结"></a>1.4 小结</h2><p>​        JavaScript 是一门用来与网页交互的脚本语言，包含以下三个组成部分。</p><ul><li>ECAMScript：由ECAM-262定义并提供核心功能。</li><li>文档对象模型（DOM）：提供与网页内容交互的方法和接口</li><li>浏览器对象模型（BOM）：提供与浏览器交互的方法和接口。</li></ul><p>​        JavaScript的这三个部分得到了五大Web浏览器（IE、Firefox、Chrome、Safari和Opera）不同程度的支持。所有浏览器基本上对ES5（ECMAScript 5）提供了完善的支持，对ES6和ES7的支持也不断提升。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Javascript</category>
       
     </categories>
     
