@@ -16,24 +16,27 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="人与人之间交是为了传递信息，是通过一句话让对方明白你的意思。那么人和计算机该怎么交流呢……">
+    <meta name="description" content="一、什么是JavaScript1.1 简单的历史回顾​        随着Web浪潮的兴起，网页变得越来越大、越来越复杂，验证一份表单与服务器进行往返通信的时间也越来越久，导致人们对客户端脚本的语言需求越来越强烈。 ​        1995年，网景公司的Brendan Eich工程师开发了一个叫Mocha（后来改名为LiveScript）的脚本语言。后来为蹭Java的热度，又把名字改成了Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算机语言">
-<meta property="og:url" content="http://example.com/2022/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/index.html">
+<meta property="og:title" content="小布菌のBlog">
+<meta property="og:url" content="http://example.com/2022/08/11/1.%E4%BB%80%E4%B9%88%E6%98%AFJavaScript/index.html">
 <meta property="og:site_name" content="小布菌のBlog">
-<meta property="og:description" content="人与人之间交是为了传递信息，是通过一句话让对方明白你的意思。那么人和计算机该怎么交流呢……">
+<meta property="og:description" content="一、什么是JavaScript1.1 简单的历史回顾​        随着Web浪潮的兴起，网页变得越来越大、越来越复杂，验证一份表单与服务器进行往返通信的时间也越来越久，导致人们对客户端脚本的语言需求越来越强烈。 ​        1995年，网景公司的Brendan Eich工程师开发了一个叫Mocha（后来改名为LiveScript）的脚本语言。后来为蹭Java的热度，又把名字改成了Java">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-03-19T12:50:00.000Z">
-<meta property="article:modified_time" content="2022-03-29T08:23:48.748Z">
+<meta property="og:image" content="c:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328195206783.png">
+<meta property="og:image" content="c:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231748831.png">
+<meta property="og:image" content="c:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231802057.png">
+<meta property="og:image" content="c:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231923402.png">
+<meta property="og:image" content="c:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328200757919.png">
+<meta property="og:image" content="c:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231320698.png">
+<meta property="article:published_time" content="2022-08-11T07:43:47.295Z">
+<meta property="article:modified_time" content="2022-05-21T09:14:31.443Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="计算机语言">
-<meta property="article:tag" content="后端">
-<meta property="article:tag" content="Java">
-<meta property="article:tag" content="C语言">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="c:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328195206783.png">
   
   
-  <title>计算机语言 - 小布菌のBlog</title>
+  <title>小布菌のBlog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -179,7 +182,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="计算机语言">
+            <span class="h2" id="subtitle" title="">
               
             </span>
 
@@ -189,8 +192,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-03-19 20:50" pubdate>
-        2022年3月19日 晚上
+      <time datetime="2022-08-11 15:43" pubdate>
+        2022年8月11日 下午
       </time>
     </span>
   
@@ -200,7 +203,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      805 字
+      1.4k 字
     </span>
   
 
@@ -209,7 +212,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      7 分钟
+      12 分钟
     </span>
   
 
@@ -238,41 +241,57 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">计算机语言</h1>
+            <h1 style="display: none"></h1>
             
             <div class="markdown-body">
-              <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>人与人之间的交流工具是语言。不同国家、民族、地区衍生出了不同的语系，虽然英语和汉语两者听起来有很大差别，但是它们都具备三个基本要素：词汇、语法、语调，只是不同语言之间这三要素的规则不尽相同。现如今计算机产业飞速发展，软件产业兴旺发达，你是否想过，计算机是如何明白人类对它发出的指令？人与计算机之间是如何完成通信？实际上，人与计算机通信也是通过一种特定的语言——计算机语言。</p>
-<h2 id="计算机语言"><a href="#计算机语言" class="headerlink" title="计算机语言"></a>计算机语言</h2><p>什么是计算机语言？像我们平常所了解的汉语，它的词汇是各种各样的汉字，语法既是主谓宾定壮补之间的规则。同样的，计算机语言也有相似规则，有特定的词汇（专业术语称为”关键字“）和特定的语法。另外就像人类之间交流的语言有汉语、英语等，人和计算机通信也可以使用不同的计算机语言，且不同的计算机语言语法是不尽相同的。从大的方面来讲，它主要分为以下三种。</p>
-<h3 id="1-机器语言"><a href="#1-机器语言" class="headerlink" title="1.机器语言"></a>1.机器语言</h3><p><strong>计算机能直接识别的语言，由0和1构成的二进制代码。</strong>这是最底层的语言，但注意不同的计算机都有各自的机器语言，即指令系统。</p>
-<h3 id="2-汇编语言"><a href="#2-汇编语言" class="headerlink" title="2.汇编语言"></a>2.汇编语言</h3><p>用一堆的0和1来组成的指令来控制计算机是一件很令人头疼的事，于是人们为了简化通常被应用在底层，硬件操作和高要求的程序优化的场合。驱动程序、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%B5%8C%E5%85%A5%E5%BC%8F/575465">嵌入式</a>操作系统和实时运行程序都需要汇编语言。它使用一些容易理解和记忆的缩写单词（即”助记符“）来代替一些特定的指令，例如：用”ADD”代表加法操作指令，”SUB”代表减法操作指令。在不同的设备中，汇编语言同样对应着不同的机器语言指令集。</p>
-<h3 id="3-高级语言"><a href="#3-高级语言" class="headerlink" title="3.高级语言"></a>3.高级语言</h3><p>和当前的人类语言近似，更加通俗易懂。当代大部分程序员都是使用高级语言来进行编程，当然，高级语言和汇编语言同样也不能被计算机读懂，</p>
-<figure class="highlight c"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></div></td><td class="code"><pre><code class="hljs c"><span class="hljs-comment">// 库文件</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;stdio.h&gt;</span></span><br><span class="hljs-comment">// main主函数</span><br><span class="hljs-type">int</span> <span class="hljs-title function_">main</span><span class="hljs-params">(<span class="hljs-type">void</span>)</span>&#123;<br>    <span class="hljs-comment">// 打印HelloWorld</span><br>    print(<span class="hljs-string">&quot;HelloWorld!&quot;</span>);<br>&#125;<br></code></pre></td></tr></table></figure>
+              <h1 id="一、什么是JavaScript"><a href="#一、什么是JavaScript" class="headerlink" title="一、什么是JavaScript"></a>一、什么是JavaScript</h1><h2 id="1-1-简单的历史回顾"><a href="#1-1-简单的历史回顾" class="headerlink" title="1.1 简单的历史回顾"></a>1.1 简单的历史回顾</h2><p>​        随着Web浪潮的兴起，网页变得越来越大、越来越复杂，验证一份表单与服务器进行往返通信的时间也越来越久，导致人们对客户端脚本的语言需求越来越强烈。</p>
+<p>​        1995年，网景公司的Brendan Eich工程师开发了一个叫Mocha（后来改名为LiveScript）的脚本语言。后来为蹭Java的热度，又把名字改成了Javascript。</p>
+<p>​        1997年，欧洲计算机制造商协会（Ecma）的第39技术委员会（TC39)制定了JavaScript 1.1的标准。这个标准即为ECMA-262，也就是ECMAScript。</p>
+<p>​        1998年，国际标准化组织（ISO）和国际电工委员会（IEC）也将ECAMScript采纳为标准（IEC-16262）。此后，各家浏览器均以ECMAScript作为自己JavaScript实现的依据，仅仅是具体实现不尽相同。</p>
+<h2 id="1-2-Javascript实现"><a href="#1-2-Javascript实现" class="headerlink" title="1.2 Javascript实现"></a>1.2 Javascript实现</h2><p>​        JavaScript和ECMAScript基本相同，但是Javascript不限于ECMA-262所定义的。它包含以下几个部分。</p>
+<ul>
+<li>核心（ECMAScript）</li>
+<li>文档对象模型（DOM）</li>
+<li>浏览器对象模型（BOM）</li>
+</ul>
+<p><img src="C:\Users\小布菌\AppData\Roaming\Typora\typora-user-images\image-20220328195206783.png" srcset="/img/loading.gif" lazyload alt="image-20220328195206783"></p>
+<h3 id="1-2-1-ECAMScript"><a href="#1-2-1-ECAMScript" class="headerlink" title="1.2.1 ECAMScript"></a>1.2.1 ECAMScript</h3><p>​        ECAMScript,即ECMA-262定义的语言，并不局限于Web浏览器。Web浏览器只是ECAMScript实现可能存在的一种宿主环境（host environment)。</p>
+<ol>
+<li><p>ECMAScript版本<br><img src="C:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231748831.png" srcset="/img/loading.gif" lazyload alt="image-20220328231748831"></p>
+<p><img src="C:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231802057.png" srcset="/img/loading.gif" lazyload alt="image-20220328231802057"></p>
+</li>
+<li><p>ECMAScript符合性</p>
+</li>
+<li><p>浏览器对ECMAScript的支持<img src="C:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231923402.png" srcset="/img/loading.gif" lazyload alt="image-20220328231923402"></p>
+</li>
+</ol>
+<h3 id="1-2-2-DOM"><a href="#1-2-2-DOM" class="headerlink" title="1.2.2 DOM"></a>1.2.2 DOM</h3><p>​        文档对象模型（DOM，Document Object Model）是一个应用编程接口（API），用于在HTML中使用拓展的XML。DOM将整个页面抽象为一组分层节点。HTML或XML页面的每个组成部分都是一种结点，包含不同的数据。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></div></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Sample Page<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><br>            Hello World!<br>        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<p>以上代码，通过DOM可以表示一组分层结点。</p>
+<p><img src="C:\Users\小布菌\AppData\Roaming\Typora\typora-user-images\image-20220328200757919.png" srcset="/img/loading.gif" lazyload alt="image-20220328200757919"></p>
+<ol>
+<li>为什么DOM是必需的</li>
+<li>DOM的级别<br>1998年10月，DOM Level 1 成为W3C的推荐标准。这个规范由两个模块组成：DOM Core 和 DOM HTML 。</li>
+<li>其他 DOM</li>
+<li>Web浏览器对 DOM 的支持情况</li>
+</ol>
+<h3 id="1-2-3-BOM"><a href="#1-2-3-BOM" class="headerlink" title="1.2.3 BOM"></a>1.2.3 BOM</h3><p>浏览器对象模型（BOM），用于支持访问和操作浏览器的窗口</p>
+<h2 id="1-3-Javascript-版本"><a href="#1-3-Javascript-版本" class="headerlink" title="1.3 Javascript 版本"></a>1.3 Javascript 版本</h2><p><img src="C:/Users/小布菌/AppData/Roaming/Typora/typora-user-images/image-20220328231320698.png" srcset="/img/loading.gif" lazyload alt="image-20220328231320698"></p>
+<p>注：多数浏览器对Javascript的支持，指的是实现ECMAScript和DOM的程度。</p>
+<h2 id="1-4-小结"><a href="#1-4-小结" class="headerlink" title="1.4 小结"></a>1.4 小结</h2><p>​        JavaScript 是一门用来与网页交互的脚本语言，包含以下三个组成部分。</p>
+<ul>
+<li>ECAMScript：由ECAM-262定义并提供核心功能。</li>
+<li>文档对象模型（DOM）：提供与网页内容交互的方法和接口</li>
+<li>浏览器对象模型（BOM）：提供与浏览器交互的方法和接口。</li>
+</ul>
+<p>​        JavaScript的这三个部分得到了五大Web浏览器（IE、Firefox、Chrome、Safari和Opera）不同程度的支持。所有浏览器基本上对ES5（ECMAScript 5）提供了完善的支持，对ES6和ES7的支持也不断提升。</p>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/%E7%A7%91%E6%99%AE/">科普</a>
-                    
-                  </div>
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/">计算机语言</a>
-                    
-                      <a class="hover-with-bg" href="/tags/%E5%90%8E%E7%AB%AF/">后端</a>
-                    
-                      <a class="hover-with-bg" href="/tags/Java/">Java</a>
-                    
-                      <a class="hover-with-bg" href="/tags/C%E8%AF%AD%E8%A8%80/">C语言</a>
-                    
-                  </div>
                 
               </div>
               
@@ -287,7 +306,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/08/11/1.%E4%BB%80%E4%B9%88%E6%98%AFJavaScript/">
+                      <a href="/2022/08/11/2.HTML%E4%B8%AD%E7%9A%84Javascript/">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
@@ -297,8 +316,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/02/16/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/">
-                        <span class="hidden-mobile">个人博客搭建记录</span>
+                      <a href="/2022/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/">
+                        <span class="hidden-mobile">计算机语言</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
